@@ -23,7 +23,7 @@ public class Account
 
     // Name is fully-accessible property; values may be read and updated
     // directly
-    public string name { get; set; }
+    public string Name { get; set; }
 
     // Make Balance a read-only property - values may be read but cannot be
     // written to the property other than by class functions
@@ -32,7 +32,7 @@ public class Account
     // Constructor takes 2 parameters to set the instance variables
     public Account(string name, double balance)
     {
-        name = name;
+        Name = name;
 
         // Validate the balance provided - if it is greater than 0,
         // set the instance variable to the value provided; otherwise
